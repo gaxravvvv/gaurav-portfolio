@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav | B.Tech Mechanical Engineering Portfolio | JECRC University</title>
+  <meta name="description" content="Portfolio of Gaurav, 1st Year B.Tech Mechanical Engineering Student at JECRC University, Jaipur. Explore CAD projects, mechatronics prototypes, skills, and academic achievements.">
+  <meta name="author" content="Gaurav">
+  <meta name="theme-color" content="#081024">
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon SVG (Inline Mechanical Caliper/Gear Motif) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23081024' stroke='%2300f2fe' stroke-width='6'/><text x='50' y='64' font-size='42' font-family='sans-serif' font-weight='bold' fill='%2300f2fe' text-anchor='middle'>G</text></svg>">
+</head>
+<body>
+
+  <!-- Background Interactive Particles Canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Top Placeholder Highlighter Alert Bar (Toggled on button click) -->
+  <div id="placeholder-notice-bar" class="placeholder-notice-bar" role="status" aria-live="polite">
+    💡 Customization Mode Active: All editable placeholders (contact details, school names, project links) are highlighted with amber dashed boxes.
+  </div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" aria-label="Gaurav Portfolio Home">
+        <div class="nav-logo-icon">GS</div>
+        <div class="nav-logo-text">Gaurav<span>.eng</span></div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#goals" class="nav-link">Goals</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Quick Action Controls -->
+      <div class="nav-actions">
+        <!-- Placeholder Hint Switcher -->
+        <button id="toggle-placeholders-btn" class="helper-toggle-btn" title="Toggle visual highlights for editable placeholder fields">
+          <span>✏️ Edit Hints</span>
+        </button>
+
+        <!-- GitHub Header Quick Link (Editable placeholder) -->
+        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="nav-social-btn" aria-label="GitHub Profile" title="GitHub (Edit link in index.html)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+
+        <!-- LinkedIn Header Quick Link (Editable placeholder) -->
+        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="nav-social-btn" aria-label="LinkedIn Profile" title="LinkedIn (Edit link in index.html)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         1. HOME / HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Student Status Pill -->
+          <div class="hero-status-pill">
+            <span class="hero-status-dot"></span>
+            <span>1st Year B.Tech • Open to Internships &amp; Research</span>
+          </div>
+
+          <!-- Greeting & Main Name -->
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Gaurav</span>
+          </h1>
+
+          <!-- Dynamic Engineering Ticker / Tagline -->
+          <div class="hero-tagline">
+            <span>&gt;</span>
+            <span id="typewriter-text">Mechanical Engineering Student</span>
+            <span class="typewriter-cursor"></span>
+          </div>
+
+          <!-- Short Introduction -->
+          <p class="hero-description">
+            A 19-year-old first-year <strong>B.Tech Mechanical Engineering</strong> undergraduate at <strong>JECRC University, Jaipur, Rajasthan</strong>. Passionate about mechanical design, computer-aided engineering (CAD), mechatronics, and sustainable technology. Driven by curiosity to understand how complex mechanisms work and eager to turn theoretical concepts into tangible, innovative engineering solutions.
+          </p>
+
+          <!-- Quick Meta Highlights -->
+          <div class="hero-meta-strip">
+            <div class="meta-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>JECRC University, Jaipur</span>
+            </div>
+            <div class="meta-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>B.Tech Batch 2026–2030</span>
+            </div>
+            <div class="meta-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Jaipur, Rajasthan, India</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Explore Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Get In Touch
+            </a>
+            <a href="#contact" class="btn btn-outline" data-copy-target="gaurav.sehra.mecheng@example.com" title="Copy Gaurav's email placeholder">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              Copy Email
+            </a>
+          </div>
+
+          <!-- Social Links Strip -->
+          <div class="hero-social-links">
+            <span class="hero-social-label">Connect:</span>
+            <!-- EDITABLE: Replace with your actual GitHub profile link -->
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="hero-social-btn editable-placeholder" title="Edit your GitHub profile link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <!-- EDITABLE: Replace with your actual LinkedIn profile link -->
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="hero-social-btn editable-placeholder" title="Edit your LinkedIn profile link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Engineering Avatar & Calipers -->
+        <div class="hero-visual-card">
+          <div class="hero-avatar-wrapper">
+            <div class="hero-avatar-glow"></div>
+            <img src="assets/images/engineer-avatar.svg" alt="Gaurav - Mechanical Engineering Student at JECRC University" class="hero-avatar-img" width="400" height="400">
+            
+            <!-- Floating Technical Annotation Badges -->
+            <div class="floating-tech-badge floating-badge-1">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+              <span>CAD &amp; Kinematics</span>
+            </div>
+
+            <div class="floating-tech-badge floating-badge-2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <span>JECRC University • Jaipur</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. ABOUT ME SECTION
+         ========================================================================== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Engineering Journey</div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">A first-year engineering student blending classical mechanical principles with modern digital technology and design thinking.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio & Core Philosophy -->
+          <div class="about-text">
+            <p>
+              Hello! I'm <strong>Gaurav</strong>, a 19-year-old engineering enthusiast pursuing my <strong>B.Tech in Mechanical Engineering at JECRC University, Jaipur, Rajasthan</strong>. From disassembling everyday mechanical gadgets in school to understanding force vectors, thermodynamic cycles, and kinematic link motions, mechanical engineering has always been my natural passion.
+            </p>
+            <p>
+              As a first-year student, my focus is twofold: mastering core foundational subjects like <strong>Engineering Mechanics, Thermodynamics, Engineering Graphics, and Workshop Manufacturing</strong>, while simultaneously bridging the gap to modern digital engineering through <strong>CAD modeling, 3D printing concepts, and embedded mechatronics with Arduino</strong>.
+            </p>
+            <p>
+              I believe great engineering requires both analytical rigor and practical hands-on curiosity. Whether it's drafting mechanisms on a drawing board, analyzing tolerances in the machine workshop, or writing code to simulate numerical models, I am driven by the process of learning, iterating, and building reliable systems.
+            </p>
+
+            <!-- 4 Pillars of Learning -->
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Hands-On Curiosity</h3>
+                <p class="pillar-desc">Passionate about workshop practice, manufacturing, and real physical assemblies rather than purely theoretical memorization.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Digital &amp; CAD Integration</h3>
+                <p class="pillar-desc">Committed to adopting modern 3D design software, parametric drafting, and simulation tools early in my undergraduate career.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Continuous Learning</h3>
+                <p class="pillar-desc">Constantly exploring technical workshops, online engineering courses (NPTEL, Coursera), and peer collaborative challenges.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Teamwork &amp; Communication</h3>
+                <p class="pillar-desc">Active contributor in collegiate engineering clubs, group lab assignments, and project brainstorming sessions.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Facts / Profile Card -->
+          <div class="about-profile-card">
+            <div class="profile-card-header">
+              <div class="profile-card-avatar">
+                <img src="assets/images/engineer-avatar.svg" alt="Gaurav Avatar" width="65" height="65">
+              </div>
+              <div>
+                <div class="profile-card-name">Gaurav</div>
+                <div class="profile-card-role">B.Tech Mechanical Eng. • 1st Year</div>
+              </div>
+            </div>
+
+            <ul class="profile-card-list">
+              <li class="profile-card-item">
+                <span class="profile-card-label">Age</span>
+                <span class="profile-card-val">19 Years</span>
+              </li>
+              <li class="profile-card-item">
+                <span class="profile-card-label">University</span>
+                <span class="profile-card-val">JECRC University, Jaipur</span>
+              </li>
+              <li class="profile-card-item">
+                <span class="profile-card-label">Department</span>
+                <span class="profile-card-val">Mechanical Engineering</span>
+              </li>
+              <li class="profile-card-item">
+                <span class="profile-card-label">Degree Batch</span>
+                <span class="profile-card-val">2026 – 2030 (1st Year)</span>
+              </li>
+              <li class="profile-card-item">
+                <span class="profile-card-label">Location</span>
+                <span class="profile-card-val">Jaipur, Rajasthan, India</span>
+              </li>
+              <li class="profile-card-item">
+                <span class="profile-card-label">Languages</span>
+                <span class="profile-card-val">English, Hindi</span>
+              </li>
+              <li class="profile-card-item">
+                <span class="profile-card-label">Key Interests</span>
+                <span class="profile-card-val">CAD, Basketball, Gaming</span>
+              </li>
+              <li class="profile-card-item">
+                <span class="profile-card-label">Status</span>
+                <span class="profile-card-val" style="color: #34d399;">Active Student</span>
+              </li>
+            </ul>
+
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="btn btn-outline" style="width: 100%;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Contact For Opportunities
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. EDUCATION SECTION
+         ========================================================================== -->
+    <section id="education" style="background: rgba(6, 12, 28, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Academic Background</div>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Academic qualifications and coursework building my technical engineering foundation.</p>
+        </div>
+
+        <div class="education-timeline">
+          <!-- 1. Current B.Tech Degree at JECRC University -->
+          <div class="edu-item">
+            <div class="edu-icon-badge" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="edu-card current">
+              <div class="edu-header">
+                <div>
+                  <h3 class="edu-degree">Bachelor of Technology (B.Tech) in Mechanical Engineering</h3>
+                  <div class="edu-institution">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    JECRC University, Jaipur, Rajasthan
+                  </div>
+                </div>
+                <span class="edu-period">2026 – 2030 • 1st Year Student</span>
+              </div>
+              <p class="edu-desc">
+                Currently building deep fundamentals in classical mechanics, thermodynamics, material properties, and engineering mathematics. Actively engaging in physical workshop labs (fitting, carpentry, welding, lathe operations) and computer-aided drafting.
+              </p>
+              <div class="edu-coursework-title">Relevant 1st Year Coursework &amp; Labs:</div>
+              <div class="edu-tags">
+                <span class="edu-tag">Engineering Mechanics (Statics &amp; Dynamics)</span>
+                <span class="edu-tag">Engineering Graphics &amp; CAD Fundamentals</span>
+                <span class="edu-tag">Basic Mechanical Engineering</span>
+                <span class="edu-tag">Engineering Mathematics (Calculus &amp; Linear Algebra)</span>
+                <span class="edu-tag">Workshop Practice &amp; Manufacturing Processes</span>
+                <span class="edu-tag">Engineering Physics &amp; Materials Science</span>
+                <span class="edu-tag">Basic Electrical &amp; Electronics Engineering</span>
+                <span class="edu-tag">Problem Solving &amp; Programming Fundamentals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Senior Secondary (Class XII - PCM) -->
+          <div class="edu-item">
+            <div class="edu-icon-badge" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <div class="edu-card">
+              <div class="edu-header">
+                <div>
+                  <h3 class="edu-degree">Senior Secondary Certificate (Class XII) – Science</h3>
+                  <div class="edu-institution">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                      <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    Times Public School, Hanumangarh, Rajasthan
+                  </div>
+                </div>
+                <span class="edu-period">Completed: 2025 • Percentage: 58%</span>
+              </div>
+              <p class="edu-desc">
+                Completed higher secondary education focusing on scientific principles, mathematical problem solving, and analytical thinking, establishing the foundation for pursuing undergraduate mechanical engineering at JECRC University.
+              </p>
+              <div class="edu-coursework-title">Key Subjects &amp; Focus Areas:</div>
+              <div class="edu-tags">
+                <span class="edu-tag">Physics</span>
+                <span class="edu-tag">Chemistry</span>
+                <span class="edu-tag">Mathematics</span>
+                <span class="edu-tag">English Core</span>
+                <span class="edu-tag">Physical Education &amp; Sports</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Secondary Education (Class X) -->
+          <div class="edu-item">
+            <div class="edu-icon-badge" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="edu-card">
+              <div class="edu-header">
+                <div>
+                  <h3 class="edu-degree">Secondary School Certificate (Class X)</h3>
+                  <div class="edu-institution">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                      <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    R.B.D.A.V. National Public School, Bathinda, Punjab
+                  </div>
+                </div>
+                <span class="edu-period" style="border-color: rgba(16, 185, 129, 0.4); color: #34d399;">Completed: 2023 • Percentage: 81.4%</span>
+              </div>
+              <p class="edu-desc">
+                Graduated secondary school with strong academic distinction (81.4%), building disciplined problem-solving capabilities, scientific curiosity, and active participation in sports and school events.
+              </p>
+              <div class="edu-tags">
+                <span class="edu-tag">Science &amp; Technology</span>
+                <span class="edu-tag">Mathematics</span>
+                <span class="edu-tag">Social Sciences</span>
+                <span class="edu-tag">English</span>
+                <span class="edu-tag">Hindi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. SKILLS SECTION
+         ========================================================================== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Capabilities &amp; Tools</div>
+          <h2 class="section-title">Technical &amp; Professional Skills</h2>
+          <p class="section-subtitle">Tailored for a 1st year engineering student actively developing competencies in design, digital tools, and collaborative teamwork.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Mechanical Engineering Basics -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Core Mechanical</h3>
+                <div class="skill-cat-subtitle">Engineering Fundamentals</div>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Engineering Graphics &amp; Drafting</span>
+                  <span class="skill-level-tag">Intermediate Basics</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 75%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Engineering Mechanics (Statics/Dynamics)</span>
+                  <span class="skill-level-tag">Academic Foundational</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 70%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Workshop Processes (Lathe, Fitting, Welding)</span>
+                  <span class="skill-level-tag">Hands-on Lab</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 80%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Fundamentals of Thermodynamics</span>
+                  <span class="skill-level-tag">Conceptual</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 65%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Basic Metrology &amp; Tolerances</span>
+                  <span class="skill-level-tag">Vernier &amp; Micrometer</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 75%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Digital & Software Skills -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Digital &amp; Software</h3>
+                <div class="skill-cat-subtitle">CAD, Computing &amp; Tools</div>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CAD / 3D Modeling (AutoCAD &amp; SolidWorks)</span>
+                  <span class="skill-level-tag">Beginner / Learner</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 68%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C / Python Programming (Basics)</span>
+                  <span class="skill-level-tag">Fundamental Algorithms</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 60%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Arduino &amp; Sensor Prototyping</span>
+                  <span class="skill-level-tag">Hobby / Mechatronics</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 65%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MS Excel &amp; Engineering Data Calculation</span>
+                  <span class="skill-level-tag">Proficient</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 82%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">3D Printing / Slicing Concepts (Cura)</span>
+                  <span class="skill-level-tag">Additive Basics</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 58%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Soft & Professional Skills -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Teamwork &amp; Personal</h3>
+                <div class="skill-cat-subtitle">Collaboration, Sports &amp; Strategy</div>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Basketball (Team Play &amp; Athleticism)</span>
+                  <span class="skill-level-tag" style="color: #f59e0b;">Active Player</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 85%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Video Gaming (Strategy &amp; Quick Reflexes)</span>
+                  <span class="skill-level-tag" style="color: #00f2fe;">Avid Gamer</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 90%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Analytical Problem-Solving</span>
+                  <span class="skill-level-tag">Strong</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 85%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Teamwork &amp; Collegiate Collaboration</span>
+                  <span class="skill-level-tag">High</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 88%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Technical Communication &amp; Reports</span>
+                  <span class="skill-level-tag">Structured</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 78%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Rapid Learning &amp; Adaptability</span>
+                  <span class="skill-level-tag">Core Trait</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 90%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. PROJECTS SECTION
+         ========================================================================== -->
+    <section id="projects" style="background: rgba(6, 12, 28, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Projects &amp; Work</div>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Featuring my personal portfolio website and structured, editable placeholders for upcoming mechanical engineering and tech projects.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Featured / Web</button>
+          <button class="filter-btn" data-filter="cad">CAD &amp; Design (Future)</button>
+          <button class="filter-btn" data-filter="mechatronics">Mechatronics (Future)</button>
+          <button class="filter-btn" data-filter="mechanical">Thermal &amp; Workshop (Future)</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Personal Engineering Portfolio Website (Active Project) -->
+          <article class="project-card" data-category="web">
+            <div class="project-thumb-wrapper">
+              <img src="assets/images/project-portfolio-web.svg" alt="Personal Engineering Portfolio Website" class="project-thumb-img" loading="lazy">
+              <span class="project-overlay-badge">Completed • Featured Project</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Personal Engineering Portfolio Website</h3>
+              <p class="project-desc">
+                Designed and built a modern, responsive personal portfolio website with a premium engineering theme (dark navy background with electric cyan/blue accents). Features an interactive HTML5 canvas particle background, glassmorphic navigation, dynamic typing banner, and structured academic placeholders.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5 (Semantic)</span>
+                <span class="tech-tag">CSS3 (Flexbox/Grid)</span>
+                <span class="tech-tag">Vanilla JavaScript</span>
+                <span class="tech-tag">Responsive Design</span>
+                <span class="tech-tag">Canvas API</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-project-key="portfolio-web">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  Details
+                </button>
+                <!-- EDITABLE: Replace with your actual project GitHub repository -->
+                <a href="https://github.com/your-username/gaurav-portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm editable-placeholder" title="Edit your GitHub repo URL">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Source Code
+                </a>
+                <a href="#home" class="btn btn-outline btn-sm">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Future CAD & Mechanical Design Project (Editable Placeholder) -->
+          <article class="project-card" data-category="cad">
+            <div class="project-thumb-wrapper">
+              <img src="assets/images/project-cad-mechanism.svg" alt="Future CAD Modeling Project" class="project-thumb-img" loading="lazy">
+              <span class="project-overlay-badge" style="border-color: #f59e0b; color: #fbbf24;">Future Project Placeholder • Editable</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title editable-placeholder">[Future Project: 3D CAD Modeling &amp; Mechanism Kinematics]</h3>
+              <p class="project-desc editable-placeholder">
+                [Editable Placeholder for your upcoming engineering design project: Replace with details of your 3D CAD modeling in SolidWorks/AutoCAD, planar mechanism simulations, assembly mates, or stress analysis calculations.]
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">AutoCAD / SolidWorks</span>
+                <span class="tech-tag">3D Parametric CAD</span>
+                <span class="tech-tag">Kinematic Simulation</span>
+                <span class="tech-tag">GD&amp;T Standards</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-project-key="future-cad">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  Details
+                </button>
+                <!-- EDITABLE: Replace with your actual project GitHub repository -->
+                <a href="https://github.com/your-username/future-cad-project" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm editable-placeholder" title="Edit your repository link">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  CAD Files Repo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Future Mechatronics / Robotics Project (Editable Placeholder) -->
+          <article class="project-card" data-category="mechatronics">
+            <div class="project-thumb-wrapper">
+              <img src="assets/images/project-robotics.svg" alt="Future Mechatronics Project" class="project-thumb-img" loading="lazy">
+              <span class="project-overlay-badge" style="border-color: #f59e0b; color: #fbbf24;">Future Project Placeholder • Editable</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title editable-placeholder">[Future Project: Mechatronics &amp; Smart Robotic Prototype]</h3>
+              <p class="project-desc editable-placeholder">
+                [Editable Placeholder for your upcoming microcontroller or IoT project: Replace with details of your Arduino/Raspberry Pi hardware build, sensor integration, motor drivers, or autonomous navigation algorithms.]
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Arduino / Microcontrollers</span>
+                <span class="tech-tag">Sensor Interfacing</span>
+                <span class="tech-tag">C / C++ Firmware</span>
+                <span class="tech-tag">Hardware Prototyping</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-project-key="future-robotics">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  Details
+                </button>
+                <!-- EDITABLE: Replace with your actual project GitHub repository -->
+                <a href="https://github.com/your-username/future-mechatronics-project" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm editable-placeholder" title="Edit your repository link">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Code Repo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Future Thermal Systems & Workshop Fabrication (Editable Placeholder) -->
+          <article class="project-card" data-category="mechanical">
+            <div class="project-thumb-wrapper">
+              <img src="assets/images/project-lathe-workshop.svg" alt="Future Workshop Fabrication Project" class="project-thumb-img" loading="lazy">
+              <span class="project-overlay-badge" style="border-color: #f59e0b; color: #fbbf24;">Future Project Placeholder • Editable</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title editable-placeholder">[Future Project: Thermal Engineering / Workshop Fabrication]</h3>
+              <p class="project-desc editable-placeholder">
+                [Editable Placeholder for your practical manufacturing or thermodynamics project: Replace with your lathe machining, heat exchanger analysis, solar thermal study, or material testing experiments at JECRC University.]
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Thermodynamics</span>
+                <span class="tech-tag">Lathe Machining</span>
+                <span class="tech-tag">Heat Transfer</span>
+                <span class="tech-tag">Precision Metrology</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-project-key="future-mechanical">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  Details
+                </button>
+                <a href="#contact" class="btn btn-secondary btn-sm editable-placeholder" title="Edit with your study link or inquiry">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                  </svg>
+                  Report / Inquiry
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. CERTIFICATIONS & ACHIEVEMENTS SECTION
+         ========================================================================== -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Verifiable Credentials</div>
+          <h2 class="section-title">Certifications &amp; Achievements</h2>
+          <p class="section-subtitle">A dedicated repository for authentic certifications, university workshops, and academic milestones. Edit placeholders as you earn new credentials.</p>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1: CAD / Drafting Certification Placeholder -->
+          <div class="cert-card">
+            <div class="cert-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <span class="cert-status-badge">Editable Placeholder</span>
+              <h3 class="cert-title editable-placeholder">[AutoDesk / SolidWorks CAD Foundations Certificate]</h3>
+              <div class="cert-issuer editable-placeholder">Issuing Body: [Autodesk / Dassault Systèmes / Coursera]</div>
+              <p class="cert-details">
+                Demonstrated proficiency in parametric part modeling, 2D drafting constraints, orthographic projections, and 3D assembly mate configurations.
+              </p>
+              <div class="cert-meta">
+                <span class="editable-placeholder">Issued: [Month, Year]</span>
+                <span class="editable-placeholder">Credential ID: [CERT-XXXXXX]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2: NPTEL / SWAYAM Engineering Mechanics Placeholder -->
+          <div class="cert-card">
+            <div class="cert-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <span class="cert-status-badge">Editable Placeholder</span>
+              <h3 class="cert-title editable-placeholder">[NPTEL / SWAYAM Online Course: Engineering Mechanics]</h3>
+              <div class="cert-issuer editable-placeholder">Issuing Body: [IIT / NPTEL / SWAYAM, MoE India]</div>
+              <p class="cert-details">
+                Rigorous 8-12 week foundational course covering force systems, equilibrium of rigid bodies, free body diagrams, centroids, moments of inertia, and trusses.
+              </p>
+              <div class="cert-meta">
+                <span class="editable-placeholder">Status: [Enrolled / Completed Year]</span>
+                <span class="editable-placeholder">Score: [Elite / XX%]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3: University Technical Workshop Placeholder -->
+          <div class="cert-card">
+            <div class="cert-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <span class="cert-status-badge">Editable Placeholder</span>
+              <h3 class="cert-title editable-placeholder">[Hands-on Robotics &amp; IoT Workshop Certificate]</h3>
+              <div class="cert-issuer editable-placeholder">Organized by: [JECRC University / Department of Mechanical Engineering]</div>
+              <p class="cert-details">
+                Participated in a multi-day practical workshop on microcontrollers, sensor interfacing, servo actuation, and automated vehicular navigation.
+              </p>
+              <div class="cert-meta">
+                <span class="editable-placeholder">Location: Jaipur, Rajasthan</span>
+                <span class="editable-placeholder">Date: [Month, Year]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4: Academic Achievement / Competition Placeholder -->
+          <div class="cert-card">
+            <div class="cert-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <span class="cert-status-badge">Editable Placeholder</span>
+              <h3 class="cert-title editable-placeholder">[Science Exhibition / Tech Fest / Hackathon Award]</h3>
+              <div class="cert-issuer editable-placeholder">Event: [Ju Rhythm / Inter-College Tech Fest, Jaipur]</div>
+              <p class="cert-details">
+                Recognition for presentation and model demonstration in engineering innovations, sustainable mobility, or technical problem solving.
+              </p>
+              <div class="cert-meta">
+                <span class="editable-placeholder">Achievement: [Finalist / 1st / 2nd Place]</span>
+                <span class="editable-placeholder">Year: [2024 / 2025]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. INTERESTS & CAREER GOALS SECTION
+         ========================================================================== -->
+    <section id="goals" style="background: rgba(6, 12, 28, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Vision &amp; Ambition</div>
+          <h2 class="section-title">Interests &amp; Career Goals</h2>
+          <p class="section-subtitle">The engineering specializations I am passionate about exploring and my structured undergraduate roadmap.</p>
+        </div>
+
+        <div class="interests-grid">
+          <!-- Left: Key Engineering Focus Areas -->
+          <div>
+            <h3 class="interests-col-title">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+              Core Areas of Interest
+            </h3>
+
+            <div class="interest-cards-list">
+              <div class="interest-item-card">
+                <div class="interest-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="1" y="3" width="15" height="13"></rect>
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="interest-item-title">Automotive &amp; Electric Mobility (EVs)</h4>
+                  <p class="interest-item-desc">Enthusiastic about vehicle chassis design, suspension dynamics, powertrain optimization, and sustainable battery thermal management systems.</p>
+                </div>
+              </div>
+
+              <div class="interest-item-card">
+                <div class="interest-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                    <rect x="9" y="9" width="6" height="6"></rect>
+                    <line x1="9" y1="1" x2="9" y2="4"></line>
+                    <line x1="15" y1="1" x2="15" y2="4"></line>
+                    <line x1="9" y1="20" x2="9" y2="23"></line>
+                    <line x1="15" y1="20" x2="15" y2="23"></line>
+                    <line x1="20" y1="9" x2="23" y2="9"></line>
+                    <line x1="20" y1="14" x2="23" y2="14"></line>
+                    <line x1="1" y1="9" x2="4" y2="9"></line>
+                    <line x1="1" y1="14" x2="4" y2="14"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="interest-item-title">Robotics &amp; Mechatronic Systems</h4>
+                  <p class="interest-item-desc">Fascinated by bridging mechanical mechanisms with electronic sensors, actuators, and microcontrollers to engineer autonomous robotic platforms.</p>
+                </div>
+              </div>
+
+              <div class="interest-item-card">
+                <div class="interest-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="interest-item-title">Renewable Energy &amp; Thermal Systems</h4>
+                  <p class="interest-item-desc">Investigating solar thermal collectors, heat exchangers, refrigeration cycles, and clean power generation strategies suitable for Rajasthan's solar-rich climate.</p>
+                </div>
+              </div>
+
+              <div class="interest-item-card">
+                <div class="interest-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="interest-item-title">Additive Manufacturing &amp; Product Design</h4>
+                  <p class="interest-item-desc">Interested in rapid prototyping, FDM 3D printing, generative design algorithms, and precision computer numerical control (CNC) machining.</p>
+                </div>
+              </div>
+
+              <div class="interest-item-card">
+                <div class="interest-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="2" x2="12" y2="22"></line>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M5 5a10 10 0 0 0 14 14"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="interest-item-title">Basketball &amp; Strategic Video Gaming</h4>
+                  <p class="interest-item-desc">Active basketball player developing court vision, leadership, and athletic teamwork. Passionate gamer cultivating quick reflexes, spatial problem-solving, and calm focus under pressure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 4-Year Academic & Career Roadmap -->
+          <div class="roadmap-container">
+            <div>
+              <h3 class="interests-col-title">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+                Career &amp; Growth Roadmap
+              </h3>
+
+              <div class="roadmap-stepper">
+                <div class="roadmap-step">
+                  <div class="step-marker">01</div>
+                  <div class="step-content">
+                    <span class="step-tag">Phase 1 • 1st &amp; 2nd Year (Present)</span>
+                    <h4 class="step-title">Master Core Foundations &amp; CAD</h4>
+                    <p class="step-desc">Achieve high academic marks at JECRC University, attain certified proficiency in SolidWorks / AutoCAD, and join student collegiate teams (e.g. SAE / BAJA / Robotics Club).</p>
+                  </div>
+                </div>
+
+                <div class="roadmap-step">
+                  <div class="step-marker">02</div>
+                  <div class="step-content">
+                    <span class="step-tag">Phase 2 • 3rd Year</span>
+                    <h4 class="step-title">Industrial Internships &amp; Research</h4>
+                    <p class="step-desc">Gain hands-on industrial internship experience in manufacturing or automotive plants in Rajasthan / NCR, learn FEA &amp; CFD simulation tools (ANSYS), and build capstone projects.</p>
+                  </div>
+                </div>
+
+                <div class="roadmap-step">
+                  <div class="step-marker">03</div>
+                  <div class="step-content">
+                    <span class="step-tag">Phase 3 • 4th Year &amp; Beyond</span>
+                    <h4 class="step-title">R&amp;D Engineering &amp; Innovation</h4>
+                    <p class="step-desc">Pursue opportunities as a Graduate Engineer Trainee (GET) / R&amp;D Mechanical Design Engineer in cutting-edge automotive, robotics, aerospace, or clean-tech sectors.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Motivated Quote -->
+            <div style="padding-top: 1.5rem; border-top: 1px dashed rgba(56, 189, 248, 0.2); font-style: italic; color: var(--text-dim); font-size: 0.875rem;">
+              "Engineering is not merely about equations; it is the art of directing the great sources of power in nature for the convenience and advancement of humanity."
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. CONTACT SECTION
+         ========================================================================== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Get In Touch</div>
+          <h2 class="section-title">Contact Gaurav</h2>
+          <p class="section-subtitle">Interested in collaborating on a student project, technical internship opportunities, or discussing engineering ideas? Let's connect!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Quick Links -->
+          <div class="contact-info-col">
+            <p class="contact-info-lead">
+              I am actively seeking <strong>summer internships, industrial trainee positions, and collaborative academic projects</strong>. Feel free to send a message or connect through my professional profiles.
+            </p>
+
+            <div class="contact-card-list">
+              <!-- Email Card with Copy button -->
+              <div class="contact-info-card">
+                <div class="contact-card-main">
+                  <div class="contact-card-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-card-label">Email Address</div>
+                    <!-- EDITABLE: Replace with your actual email address -->
+                    <div class="contact-card-val editable-placeholder" id="contact-email-val" title="Edit your email address">
+                      gaurav.sehra.mecheng@example.com
+                    </div>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy-target="gaurav.sehra.mecheng@example.com" title="Copy email address to clipboard">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  Copy
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-info-card">
+                <div class="contact-card-main">
+                  <div class="contact-card-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-card-label">Current Location</div>
+                    <div class="contact-card-val">Jaipur, Rajasthan, India</div>
+                  </div>
+                </div>
+                <span class="tech-tag">IST (UTC+5:30)</span>
+              </div>
+
+              <!-- College Campus Card -->
+              <div class="contact-info-card">
+                <div class="contact-card-main">
+                  <div class="contact-card-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-card-label">Campus</div>
+                    <div class="contact-card-val">JECRC University, Ramchandrapura, Jaipur</div>
+                  </div>
+                </div>
+                <span class="tech-tag">Mechanical Dept</span>
+              </div>
+            </div>
+
+            <!-- Social Links Quick Box -->
+            <div class="social-links-box">
+              <div class="social-box-title">Professional Profiles (Editable Links)</div>
+              <div class="social-box-btns">
+                <!-- EDITABLE: Replace with your actual GitHub profile link -->
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm editable-placeholder" title="Edit with your GitHub profile link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub: @your-username
+                </a>
+
+                <!-- EDITABLE: Replace with your actual LinkedIn profile link -->
+                <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm editable-placeholder" title="Edit with your LinkedIn profile link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                  LinkedIn: in/your-profile
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">
+                  Your Full Name
+                  <span style="color: var(--accent-cyan); font-size: 0.75rem;">*Required</span>
+                </label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">
+                  Your Email Address
+                  <span style="color: var(--accent-cyan); font-size: 0.75rem;">*Required</span>
+                </label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. rahul@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Project Collaboration / Internship Inquiry">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">
+                  Message
+                  <span style="color: var(--accent-cyan); font-size: 0.75rem;">*Required</span>
+                </label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Hi Gaurav, I came across your portfolio and would like to connect regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Send Message via Email
+              </button>
+              <div style="text-align: center; font-size: 0.785rem; color: var(--text-dim); margin-top: 0.25rem;">
+                Submitting prepares a pre-filled direct email in your default email client.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       PROJECT DETAILS MODAL
+       ========================================================================== -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <span id="modal-category" class="section-badge" style="margin-bottom: 0.35rem;">Category</span>
+          <h3 id="modal-title" class="modal-title">Project Title</h3>
+        </div>
+        <button id="modal-close" class="modal-close-btn" aria-label="Close modal dialog">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="modal-desc"></p>
+        
+        <h4>Tools &amp; Engineering Software Used:</h4>
+        <div id="modal-tools" class="project-tech-tags"></div>
+
+        <h4>Key Methodologies &amp; Technical Learnings:</h4>
+        <ul id="modal-highlights"></ul>
+
+        <div style="background: rgba(17, 32, 72, 0.4); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1rem; margin-top: 1.25rem;">
+          <strong style="color: var(--accent-cyan); display: block; margin-bottom: 0.25rem; font-family: var(--font-mono); font-size: 0.8rem;">
+            💡 Customization Note for Gaurav:
+          </strong>
+          <span style="font-size: 0.85rem; color: var(--text-muted);">
+            This is a realistic, structured first-year engineering sample project. You can easily edit or replace this text in <code style="color: var(--accent-cyan); font-family: var(--font-mono);">js/main.js</code> under <code style="color: var(--accent-cyan); font-family: var(--font-mono);">PROJECT_DATA</code> whenever you complete your own design or laboratory work!
+          </span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span id="modal-status" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-blue); align-self: center; margin-right: auto;"></span>
+        <button class="btn btn-secondary btn-sm" onclick="document.getElementById('project-modal').classList.remove('open'); document.body.style.overflow='';">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand & Bio -->
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="nav-logo-icon">GS</div>
+            <div class="nav-logo-text">Gaurav<span>.eng</span></div>
+          </div>
+          <p class="footer-desc">
+            1st Year B.Tech Mechanical Engineering student at JECRC University, Jaipur, Rajasthan. Aspiring to build innovative mechanical and mechatronics systems for a sustainable tomorrow.
+          </p>
+          <div style="display: flex; gap: 0.75rem; margin-top: 0.5rem;">
+            <!-- EDITABLE: Replace with your actual GitHub profile link -->
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="nav-social-btn editable-placeholder" aria-label="GitHub Profile" title="GitHub (Edit link in index.html)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <!-- EDITABLE: Replace with your actual LinkedIn profile link -->
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="nav-social-btn editable-placeholder" aria-label="LinkedIn Profile" title="LinkedIn (Edit link in index.html)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#contact" class="nav-social-btn" aria-label="Email Me" data-copy-target="gaurav.sehra.mecheng@example.com" title="Copy Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Section Links -->
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Me</a></li>
+            <li><a href="#education" class="footer-link">Education Timeline</a></li>
+            <li><a href="#skills" class="footer-link">Skills &amp; Competencies</a></li>
+            <li><a href="#projects" class="footer-link">Projects &amp; Prototypes</a></li>
+          </ul>
+        </div>
+
+        <!-- Engineering Resources & Contact Quick Links -->
+        <div>
+          <div class="footer-col-title">Quick Connect</div>
+          <ul class="footer-links-list">
+            <li><a href="#certifications" class="footer-link">Certifications &amp; Awards</a></li>
+            <li><a href="#goals" class="footer-link">Interests &amp; Roadmap</a></li>
+            <li><a href="#contact" class="footer-link">Send Direct Message</a></li>
+            <li><a href="https://jecrcuniversity.edu.in" target="_blank" rel="noopener noreferrer" class="footer-link">JECRC University Official</a></li>
+            <li><a href="#" class="footer-link" id="footer-copy-email" data-copy-target="gaurav.sehra.mecheng@example.com">Copy Email Address</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Strip -->
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> <strong>Gaurav</strong>. All Rights Reserved. Built with modern HTML5, CSS3, &amp; Vanilla JS.
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <span>Jaipur, Rajasthan, India</span>
+          <a href="#home" class="back-to-top-btn" aria-label="Back to top of page" title="Scroll back to top">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
