@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091326" />
+      <stop offset="100%" stop-color="#0e1f3d" />
+    </linearGradient>
+    <pattern id="isoGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(56, 189, 248, 0.07)" stroke-width="1"/>
+      <line x1="0" y1="0" x2="30" y2="30" stroke="rgba(56, 189, 248, 0.04)" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="knurl" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M0 6 L6 0 M0 0 L6 6" stroke="rgba(0, 242, 254, 0.4)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="360" fill="url(#bgGrad4)"/>
+  <rect width="600" height="360" fill="url(#isoGrid)"/>
+
+  <!-- Header -->
+  <text x="30" y="35" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8" letter-spacing="1">WORKSHOP-04 // LATHE MACHINING &amp; TOLERANCE WORKPIECE</text>
+  <text x="570" y="35" font-family="'JetBrains Mono', monospace" font-size="11" fill="rgba(148, 163, 184, 0.7)" text-anchor="end">MANUFACTURING / METROLOGY</text>
+  <line x1="30" y1="45" x2="570" y2="45" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1" />
+
+  <!-- Centerline of Machined Shaft -->
+  <line x1="60" y1="180" x2="540" y2="180" stroke="#f43f5e" stroke-width="1.5" stroke-dasharray="16 4 4 4"/>
+
+  <!-- Stepped Cylindrical Shaft Profile (Turned on Lathe) -->
+  <g transform="translate(90, 0)">
+    <!-- Section 1: Base Diameter (Ø 48) -->
+    <rect x="0" y="130" width="80" height="100" fill="#13264c" stroke="#38bdf8" stroke-width="2"/>
+    
+    <!-- Section 2: Knurled Handle Section (Ø 40) -->
+    <rect x="80" y="140" width="100" height="80" fill="url(#knurl)" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="80" y="140" width="100" height="80" fill="none" stroke="#00f2fe" stroke-width="2"/>
+
+    <!-- Section 3: Threaded / Step Section (Ø 30) -->
+    <rect x="180" y="150" width="90" height="60" fill="#162e5b" stroke="#38bdf8" stroke-width="2"/>
+    <g stroke="rgba(56, 189, 248, 0.5)" stroke-width="1.5">
+      <line x1="190" y1="150" x2="190" y2="210"/>
+      <line x1="200" y1="150" x2="200" y2="210"/>
+      <line x1="210" y1="150" x2="210" y2="210"/>
+      <line x1="220" y1="150" x2="220" y2="210"/>
+      <line x1="230" y1="150" x2="230" y2="210"/>
+      <line x1="240" y1="150" x2="240" y2="210"/>
+      <line x1="250" y1="150" x2="250" y2="210"/>
+    </g>
+
+    <!-- Section 4: Chamfer & Nose Section (Ø 20) -->
+    <polygon points="270,160 380,160 395,170 395,190 380,200 270,200" fill="#1e3a6d" stroke="#38bdf8" stroke-width="2"/>
+
+    <!-- Dimension Lines: Diameters -->
+    <!-- Ø 48 -->
+    <line x1="-15" y1="130" x2="-15" y2="230" stroke="#00f2fe" stroke-width="1.5"/>
+    <line x1="-20" y1="130" x2="0" y2="130" stroke="#00f2fe" stroke-width="1"/>
+    <line x1="-20" y1="230" x2="0" y2="230" stroke="#00f2fe" stroke-width="1"/>
+    <text x="-35" y="184" font-family="'JetBrains Mono', monospace" font-size="11" fill="#00f2fe" text-anchor="end">Ø48 ±0.05</text>
+
+    <!-- Ø 30 -->
+    <line x1="225" y1="120" x2="225" y2="150" stroke="#38bdf8" stroke-width="1"/>
+    <line x1="225" y1="210" x2="225" y2="240" stroke="#38bdf8" stroke-width="1"/>
+    <text x="225" y="112" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8" text-anchor="middle">M30x1.5</text>
+
+    <!-- Dimension Lines: Lengths -->
+    <line x1="0" y1="255" x2="395" y2="255" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="0" y1="235" x2="0" y2="265" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="395" y1="205" x2="395" y2="265" stroke="#f59e0b" stroke-width="1"/>
+    <text x="197" y="275" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f59e0b" text-anchor="middle">TOTAL LENGTH: 240mm</text>
+  </g>
+
+  <!-- GD&T Symbol Box Callout -->
+  <g transform="translate(430, 80)">
+    <rect x="0" y="0" width="130" height="34" fill="#0b1736" stroke="#00f2fe" stroke-width="1.5"/>
+    <line x1="35" y1="0" x2="35" y2="34" stroke="#00f2fe" stroke-width="1.5"/>
+    <line x1="90" y1="0" x2="90" y2="34" stroke="#00f2fe" stroke-width="1.5"/>
+    <!-- Runout symbol -->
+    <path d="M 10 24 L 20 10 L 25 18" fill="none" stroke="#00f2fe" stroke-width="2"/>
+    <text x="62" y="22" font-family="'JetBrains Mono', monospace" font-size="12" fill="#ffffff" text-anchor="middle">0.02</text>
+    <text x="110" y="22" font-family="'JetBrains Mono', monospace" font-size="12" fill="#ffffff" text-anchor="middle">A</text>
+  </g>
+
+  <!-- Footer Stats -->
+  <line x1="30" y1="320" x2="570" y2="320" stroke="rgba(56, 189, 248, 0.2)" stroke-width="1" />
+  <text x="30" y="340" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">MATERIAL: MILD STEEL (AISI 1018)  |  PROCESS: FACING, STEP TURNING, DIAMOND KNURLING</text>
+  <text x="570" y="340" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8" text-anchor="end">JECRC WORKSHOP LAB</text>
+</svg>

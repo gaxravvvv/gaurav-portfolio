@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradWeb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071126" />
+      <stop offset="100%" stop-color="#0c1b3f" />
+    </linearGradient>
+    <pattern id="webGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(0, 242, 254, 0.07)" stroke-width="1"/>
+      <circle cx="12" cy="12" r="1" fill="rgba(56, 189, 248, 0.12)"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="360" fill="url(#bgGradWeb)"/>
+  <rect width="600" height="360" fill="url(#webGrid)"/>
+
+  <!-- Technical Header -->
+  <text x="30" y="35" font-family="'JetBrains Mono', monospace" font-size="12" fill="#00f2fe" letter-spacing="1">PROJECT-01 // RESPONSIVE PORTFOLIO WEBSITE</text>
+  <text x="570" y="35" font-family="'JetBrains Mono', monospace" font-size="11" fill="rgba(148, 163, 184, 0.7)" text-anchor="end">HTML5 / CSS3 / JAVASCRIPT</text>
+  <line x1="30" y1="45" x2="570" y2="45" stroke="rgba(0, 242, 254, 0.3)" stroke-width="1" />
+
+  <!-- Browser Window Mockup Frame -->
+  <g transform="translate(60, 65)">
+    <!-- Window Outer Shell -->
+    <rect x="0" y="0" width="480" height="245" rx="10" fill="#09132b" stroke="#38bdf8" stroke-width="1.8" />
+    
+    <!-- Window Top Header Bar -->
+    <rect x="0" y="0" width="480" height="32" rx="10" fill="#0d1f45"/>
+    <rect x="0" y="24" width="480" height="8" fill="#0d1f45"/>
+    <line x1="0" y1="32" x2="480" y2="32" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1"/>
+
+    <!-- Window Control Dots -->
+    <circle cx="18" cy="16" r="4.5" fill="#f43f5e"/>
+    <circle cx="32" cy="16" r="4.5" fill="#f59e0b"/>
+    <circle cx="46" cy="16" r="4.5" fill="#10b981"/>
+
+    <!-- URL Bar -->
+    <rect x="75" y="8" width="280" height="16" rx="8" fill="#060c1d" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1"/>
+    <text x="140" y="20" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">https://gaurav.dev/portfolio</text>
+
+    <!-- Internal Web Layout -->
+    <!-- Mini Navbar -->
+    <rect x="15" y="44" width="450" height="22" rx="4" fill="rgba(15, 29, 65, 0.7)"/>
+    <circle cx="28" cy="55" r="5" fill="#00f2fe"/>
+    <rect x="40" y="52" width="40" height="6" rx="2" fill="#ffffff" opacity="0.8"/>
+    <rect x="360" y="52" width="22" height="6" rx="2" fill="#38bdf8"/>
+    <rect x="390" y="52" width="22" height="6" rx="2" fill="#38bdf8"/>
+    <rect x="420" y="52" width="30" height="6" rx="2" fill="#00f2fe"/>
+
+    <!-- Mini Hero Section -->
+    <!-- Left Hero Column: Headline & buttons -->
+    <rect x="25" y="80" width="130" height="12" rx="3" fill="#ffffff"/>
+    <rect x="25" y="100" width="180" height="8" rx="2" fill="#00f2fe"/>
+    <rect x="25" y="115" width="200" height="6" rx="2" fill="#94a3b8" opacity="0.7"/>
+    <rect x="25" y="126" width="170" height="6" rx="2" fill="#94a3b8" opacity="0.7"/>
+    <rect x="25" y="137" width="140" height="6" rx="2" fill="#94a3b8" opacity="0.7"/>
+
+    <!-- Mini Buttons -->
+    <rect x="25" y="155" width="55" height="16" rx="4" fill="#00f2fe"/>
+    <rect x="86" y="155" width="55" height="16" rx="4" fill="none" stroke="#38bdf8" stroke-width="1"/>
+
+    <!-- Right Hero Column: Avatar & Gear -->
+    <circle cx="340" cy="120" r="38" fill="#102554" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <circle cx="340" cy="120" r="24" fill="#09142e" stroke="#38bdf8" stroke-width="1.5"/>
+    <path d="M 334 116 L 340 106 L 346 116 Z" fill="#00f2fe"/>
+    <rect x="332" y="120" width="16" height="14" rx="2" fill="#38bdf8"/>
+
+    <!-- Cards Row at Bottom of Window -->
+    <rect x="25" y="185" width="95" height="42" rx="4" fill="#0f224b" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
+    <rect x="135" y="185" width="95" height="42" rx="4" fill="#0f224b" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
+    <rect x="245" y="185" width="95" height="42" rx="4" fill="#0f224b" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
+    <rect x="355" y="185" width="95" height="42" rx="4" fill="#0f224b" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
+  </g>
+
+  <!-- Responsive Device Icons Overlay (Mobile + Tablet + Laptop) -->
+  <g transform="translate(485, 230)">
+    <!-- Mobile Phone Frame -->
+    <rect x="0" y="0" width="38" height="68" rx="6" fill="#070e22" stroke="#00f2fe" stroke-width="1.5"/>
+    <rect x="4" y="8" width="30" height="48" rx="2" fill="#0c183a"/>
+    <circle cx="19" cy="61" r="2.5" fill="#38bdf8"/>
+    <!-- Screen content -->
+    <rect x="8" y="14" width="22" height="4" rx="1" fill="#00f2fe"/>
+    <rect x="8" y="22" width="22" height="14" rx="2" fill="#162e60"/>
+    <rect x="8" y="40" width="22" height="10" rx="2" fill="#162e60"/>
+  </g>
+
+  <!-- Footer Stats -->
+  <line x1="30" y1="320" x2="570" y2="320" stroke="rgba(0, 242, 254, 0.2)" stroke-width="1" />
+  <text x="30" y="340" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">STACK: HTML5 / MODERN CSS3 / VANILLA JS  |  DESIGN: DARK NAVY &amp; BLUE ACCENTS</text>
+  <text x="570" y="340" font-family="'JetBrains Mono', monospace" font-size="10" fill="#00f2fe" text-anchor="end">STATUS: LIVE &amp; ACTIVE</text>
+</svg>

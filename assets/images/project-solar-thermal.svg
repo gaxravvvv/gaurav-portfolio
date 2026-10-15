@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081426" />
+      <stop offset="100%" stop-color="#0e2340" />
+    </linearGradient>
+    <linearGradient id="solarGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.1"/>
+    </linearGradient>
+    <pattern id="gridPattern3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(56, 189, 248, 0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="360" fill="url(#bgGrad3)"/>
+  <rect width="600" height="360" fill="url(#gridPattern3)"/>
+
+  <!-- Header -->
+  <text x="30" y="35" font-family="'JetBrains Mono', monospace" font-size="12" fill="#f59e0b" letter-spacing="1">THERMAL-03 // SOLAR THERMAL DISTILLER &amp; COLLECTOR</text>
+  <text x="570" y="35" font-family="'JetBrains Mono', monospace" font-size="11" fill="rgba(148, 163, 184, 0.7)" text-anchor="end">THERMODYNAMICS / RENEWABLE</text>
+  <line x1="30" y1="45" x2="570" y2="45" stroke="rgba(245, 158, 11, 0.3)" stroke-width="1" />
+
+  <!-- Sun Rays & Angle Vector -->
+  <g transform="translate(100, 90)">
+    <circle cx="0" cy="0" r="22" fill="#f59e0b" opacity="0.9"/>
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="18" y1="18" x2="90" y2="70" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6 3"/>
+    <line x1="28" y1="0" x2="110" y2="30" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6 3"/>
+    <line x1="0" y1="28" x2="60" y2="100" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6 3"/>
+  </g>
+
+  <!-- Solar Collector Cross Section -->
+  <g transform="translate(180, 110)">
+    <!-- Insulated Enclosure Base -->
+    <path d="M 40 160 L 260 160 L 260 110 L 40 40 Z" fill="#13274c" stroke="#38bdf8" stroke-width="2"/>
+    
+    <!-- Transparent Glass Cover (Inclined Condensation Slope) -->
+    <line x1="40" y1="40" x2="260" y2="110" stroke="#00f2fe" stroke-width="3.5" stroke-linecap="round"/>
+    
+    <!-- Absorber Plate (Dark selective coating) -->
+    <line x1="60" y1="145" x2="240" y2="145" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>
+    <line x1="60" y1="145" x2="240" y2="145" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Water Basin Layer -->
+    <rect x="60" y="130" width="180" height="15" fill="rgba(56, 189, 248, 0.3)" rx="2"/>
+    
+    <!-- Evaporation and Condensation droplets -->
+    <g fill="#00f2fe" opacity="0.7">
+      <circle cx="90" cy="115" r="2"/>
+      <circle cx="120" cy="95" r="2.5"/>
+      <circle cx="150" cy="85" r="2"/>
+      <circle cx="180" cy="98" r="2"/>
+      <circle cx="210" cy="105" r="2.5"/>
+    </g>
+
+    <!-- Freshwater Catchment Trough -->
+    <path d="M 255 110 L 275 110 L 275 125 L 255 125 Z" fill="#0284c7" stroke="#38bdf8" stroke-width="1.5"/>
+    <path d="M 275 125 L 305 160" stroke="#00f2fe" stroke-width="2" stroke-linecap="round"/>
+    <rect x="295" y="160" width="30" height="40" rx="4" fill="#0f1e3c" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect x="298" y="175" width="24" height="22" rx="2" fill="rgba(0, 242, 254, 0.4)"/>
+    <text x="310" y="215" font-family="'JetBrains Mono', monospace" font-size="9" fill="#00f2fe" text-anchor="middle">PURE H2O</text>
+
+    <!-- Heat Transfer Callouts -->
+    <text x="140" y="60" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f87171">q_in (Radiation)</text>
+    <text x="110" y="178" font-family="'JetBrains Mono', monospace" font-size="10" fill="#60a5fa">q_loss &lt; 12%</text>
+  </g>
+
+  <!-- Technical Spec & Temperature Graph Mini Overlay -->
+  <g transform="translate(450, 110)">
+    <rect x="0" y="0" width="120" height="100" rx="6" fill="rgba(11, 25, 54, 0.7)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1"/>
+    <text x="10" y="20" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">ΔT CURVE</text>
+    <path d="M 15 80 Q 40 70 70 35 T 105 25" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="105" cy="25" r="3" fill="#ef4444"/>
+    <text x="60" y="90" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8">T_max: 68°C</text>
+  </g>
+
+  <!-- Footer Stats -->
+  <line x1="30" y1="320" x2="570" y2="320" stroke="rgba(245, 158, 11, 0.2)" stroke-width="1" />
+  <text x="30" y="340" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">AREA: 0.5 m²  |  TILT: 27° (JAIPUR LATITUDE)  |  YIELD: 1.8 L/DAY</text>
+  <text x="570" y="340" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f59e0b" text-anchor="end">STATUS: COMPUTATIONAL MODEL</text>
+</svg>
